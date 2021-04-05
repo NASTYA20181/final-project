@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0;
 } */
-
+/* 
 .grid-item1 {
 overflow: hidden;
 position: relative;
@@ -13,8 +13,8 @@ padding-top:45%;
 .overlay {
 background: rgba(36, 36, 36, 0.6);
 position: absolute;
-width: 23.3em;
-height: 53.9%;
+width: 16%;
+height: 41%;
 z-index: 4;
 display: flex;
 justify-content: center;
@@ -59,9 +59,9 @@ border: 1px solid black;
 
 .wrapper {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr; */
 /* grid-template-rows: minmax(860px, auto) minmax(860px, auto); */
-}
+/* } */
 
 /* .first-row {
 display: grid;
@@ -76,7 +76,7 @@ grid-template-columns: 0.2fr 0.4fr 0.4fr;
 grid-template-rows: minmax(500px, auto) minmax(500px, auto) minmax(500px, auto);
 } */
 
-img {
+/* img {
 width: 20%;
 margin: 0 auto;
 }
@@ -120,13 +120,13 @@ margin: 0 auto;
 
 .right-side {
     background: linear-gradient(135.66deg, #2D3757 0%, #37526C 101.18%);
-}
+} */
 
 /* Hover */
 
-.overlay:hover, .overlay_nth-child2:hover {
+/* .overlay:hover, .overlay_nth-child2:hover {
     background: rgba(45, 55, 87, 0.8);
-}
+} */
 
 
 /* @media screen and (min-width: 2560px) {
@@ -134,3 +134,88 @@ margin: 0 auto;
         width: 4em;
     }
 } */
+main { 
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    color: #eef0f1;
+    text-align: center;
+}
+
+* {box-sizing: border-box; }
+.categories {
+    display: flex; 
+    width: 65%; 
+    flex-wrap: wrap; 
+    font-size: 1.5vw;
+
+}
+.categories h1 {
+    padding-top: 160px;
+
+}
+.overlord{
+    background: black;
+    opacity: .8;
+    padding: 10px;
+} 
+.categories > div {
+    border: 1px solid; 
+    margin: 0px; 
+    padding: 0px; 
+}
+.categories__fonts{
+    width: 34%;
+    background-image: url(Images/font.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories div:nth-of-type(2) {
+    width: 66%;
+    background-image: url(Images/cods.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(3) {
+    width: 34%; 
+    flex-grow: 0; 
+    flex-shrink: 0;
+    background-image: url(Images/learn.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(4) {
+    flex-shrink: 0; 
+    flex-grow: 0; 
+    align-self: stretch; 
+    order: 0; 
+    width: 33%;
+    background-image: url(Images/polza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(5) {
+    width: 33%;
+    background-image: url(Images/help.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list {
+    width: 35%;
+    background: linear-gradient(135.66deg, #2D3757 0%, #37526C 101.18%);
+    height: 50rem;
+    padding: 3px;
+    font-size: 2vw;
+}
+.overlord {
+    height: 24.9rem;
+    background-color: black;
+    opacity: .8;
+
+}
+.overlord:hover {
+    background: rgba(45, 55, 87, 0.8);
+}
