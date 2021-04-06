@@ -25,7 +25,7 @@ main {
     padding-top: 160px;
 
 }
-.overlord{
+.overlay{
     background: black;
     opacity: .8;
     padding: 10px;
@@ -79,13 +79,13 @@ main {
     font-size: 2vw;
 
 }
-.overlord {
+.overlay {
     height: 29.95rem;
     background-color: black;
     opacity: .8;
-
+    cursor: pointer;
 }
-.overlord:hover {
+.overlay:hover {
     background: rgba(45, 55, 87, 0.8);
 }
 a, a:link, a:visited {
@@ -106,7 +106,7 @@ a:hover {
         height: 35rem;
         padding: 3px;
     }
-    .overlord {
+    .overlay {
         height: 17.4rem;
     }
     .list__text {
@@ -149,7 +149,7 @@ a:hover {
     .list {
         height: 75rem;
     }
-    .overlord {
+    .overlay {
         height: 37.5rem;
     }
     .list__text {
