@@ -16,94 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
-    <style>
-        main { 
-    display: flex;
-    width: 100%;
-    height: 50rem;
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    color: #eef0f1;
-    text-align: center;
-}
 
-* {box-sizing: border-box; }
-.categories {
-    display: flex; 
-    width: 65%; 
-    flex-wrap: wrap; 
-    font-size: 1.5vw;
-
-}
-.categories h1 {
-    padding-top: 160px;
-
-}
-.overlord{
-    background: black;
-    opacity: .8;
-    padding: 10px;
-} 
-.categories > div {
-    border: 1px solid; 
-    margin: 0px; 
-    padding: 0px; 
-}
-.categories__fonts{
-    width: 34%;
-    background-image: url(Images/font.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categories div:nth-of-type(2) {
-    width: 66%;
-    background-image: url(Images/cods.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categories > div:nth-of-type(3) {
-    width: 34%; 
-    flex-grow: 0; 
-    flex-shrink: 0;
-    background-image: url(Images/learn.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categories > div:nth-of-type(4) {
-    flex-shrink: 0; 
-    flex-grow: 0; 
-    align-self: stretch; 
-    order: 0; 
-    width: 33%;
-    background-image: url(Images/polza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categories > div:nth-of-type(5) {
-    width: 33%;
-    background-image: url(Images/help.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.list {
-    width: 35%;
-    background: linear-gradient(135.66deg, #2D3757 0%, #37526C 101.18%);
-    height: 50rem;
-    padding: 3px;
-    font-size: 2vw;
-}
-.overlord {
-    height: 24.9rem;
-    background-color: black;
-    opacity: .8;
-
-}
-.overlord:hover {
-    background: rgba(45, 55, 87, 0.8);
-}
-
-    </style>
 </head>
 <body>
 
@@ -146,27 +59,27 @@
 
     <main class="main">
         <div class="categories">
-                    <div class="categories__fonts">
+                    <div class="categories__fonts" onclick="showFonts()">
                         <div class="overlord">
                             <h1>Шрифты</h1>
                         </div>
                     </div>
-                    <div class="categories__editors">
+                    <div class="categories__editors" onclick="showEditors()">
                         <div class="overlord">
                             <h1>Редактори <br> Коду</h1>
                         </div>
                     </div>
-                    <div class="categories__education">
+                    <div class="categories__education" onclick="showEducation()"> 
                         <div class="overlord">
                             <h1>Обучение <br> front-end</h1>
                         </div>
                     </div>
-                    <div class="categories__blogs">
+                    <div class="categories__blogs" onclick="showBlogs()">
                         <div class="overlord">
                             <h1>Полезные <br> блоги</h1>
                         </div>
                 </div>
-                    <div class="categories__help">
+                    <div class="categories__help" onclick="showHelp()">
                         <div class="overlord">
                         <h1>Допомога <br> дизайнерам</h1>
                     </div>
@@ -174,8 +87,11 @@
             </div>
         <div class="list">
             <h1>Шпаргалка для front-end разработчиков</h1>
-            <p>Не стоит благодарить, просто пользуйтесь</p>
+            <p>Не стоит благодарить, просто нажимай на картинки</p>
+            <div class="list__text"></div>
         </div>
     </main>
+    <script src="app.js">
+    </script>
 </body>
 </html>
