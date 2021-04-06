@@ -1,5 +1,4 @@
 let text = document.querySelector(".list__text");
-        console.log(text)
         function showFonts() {
             text.innerHTML = '<a href="#">' + `textgenerator.ru - Створюйте тексти з красивими шрифтами і копіюйте їх онлайн` + '</a>' + '<br>' + '<br>' +
                              '<a href="#">' + `fonts.google.com - бібліотека шрифтів від Google`+ '</a>' + '<br>' + '<br>' +
