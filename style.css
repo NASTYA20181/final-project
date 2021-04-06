@@ -137,12 +137,12 @@ margin: 0 auto;
 main { 
     display: flex;
     width: 100%;
-    height: 50rem;
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
     color: #eef0f1;
     text-align: center;
+    height: 60rem;
 }
 
 * {box-sizing: border-box; }
@@ -206,16 +206,85 @@ main {
 .list {
     width: 35%;
     background: linear-gradient(135.66deg, #2D3757 0%, #37526C 101.18%);
-    height: 50rem;
+    height: 60rem;
     padding: 3px;
     font-size: 2vw;
+
 }
 .overlord {
-    height: 24.9rem;
+    height: 29.95rem;
     background-color: black;
     opacity: .8;
 
 }
 .overlord:hover {
     background: rgba(45, 55, 87, 0.8);
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color:#eef0f1;
+}
+a:hover {
+    color:skyblue;
+}
+@media screen and (max-width: 712px) {
+    .categories{
+        font-size: 1vh;
+    }
+    .main {
+        height: 35rem;
+    }
+    .list {
+        height: 35rem;
+        padding: 3px;
+    }
+    .overlord {
+        height: 17.4rem;
+    }
+    .list__text {
+        font-size: 4vw;
+    }
+    .categories h1 {
+        padding-top: 140px;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 442px) {
+    .list__text {
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width: 442px) {
+    .list__text {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 487px) {
+    .list__text {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 678px) {
+    .list__text {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 712px) {
+    .list__text{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (min-width: 1550px) {
+    .main {
+        height: 75rem;
+    }
+    .list {
+        height: 75rem;
+    }
+    .overlord {
+        height: 37.5rem;
+    }
+    .list__text {
+        font-size: 1.3vw;
+    }
 }
