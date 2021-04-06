@@ -16,47 +16,164 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
+    <style>
+        main { 
+    display: flex;
+    width: 100%;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    color: #eef0f1;
+    text-align: center;
+    height: 60rem;
+}
 
+* {box-sizing: border-box; }
+.categories {
+    display: flex; 
+    width: 65%; 
+    flex-wrap: wrap; 
+    font-size: 1.5vw;
+
+}
+.categories h1 {
+    padding-top: 160px;
+
+}
+.overlord{
+    background: black;
+    opacity: .8;
+    padding: 10px;
+} 
+.categories > div {
+    border: 1px solid; 
+    margin: 0px; 
+    padding: 0px; 
+}
+.categories__fonts{
+    width: 34%;
+    background-image: url(Images/font.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories div:nth-of-type(2) {
+    width: 66%;
+    background-image: url(Images/cods.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(3) {
+    width: 34%; 
+    flex-grow: 0; 
+    flex-shrink: 0;
+    background-image: url(Images/learn.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(4) {
+    flex-shrink: 0; 
+    flex-grow: 0; 
+    align-self: stretch; 
+    order: 0; 
+    width: 33%;
+    background-image: url(Images/polza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories > div:nth-of-type(5) {
+    width: 33%;
+    background-image: url(Images/help.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list {
+    width: 35%;
+    background: linear-gradient(135.66deg, #2D3757 0%, #37526C 101.18%);
+    height: 60rem;
+    padding: 3px;
+    font-size: 2vw;
+
+}
+.overlord {
+    height: 29.95rem;
+    background-color: black;
+    opacity: .8;
+
+}
+.overlord:hover {
+    background: rgba(45, 55, 87, 0.8);
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color:#eef0f1;
+}
+a:hover {
+    color:skyblue;
+}
+@media screen and (max-width: 712px) {
+    .categories{
+        font-size: 1vh;
+    }
+    .main {
+        height: 35rem;
+    }
+    .list {
+        height: 35rem;
+        padding: 3px;
+    }
+    .overlord {
+        height: 17.4rem;
+    }
+    .list__text {
+        font-size: 4vw;
+    }
+    .categories h1 {
+        padding-top: 140px;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 442px) {
+    .list__text {
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width: 442px) {
+    .list__text {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 487px) {
+    .list__text {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 678px) {
+    .list__text {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 712px) {
+    .list__text{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (min-width: 1550px) {
+    .main {
+        height: 75rem;
+    }
+    .list {
+        height: 75rem;
+    }
+    .overlord {
+        height: 37.5rem;
+    }
+    .list__text {
+        font-size: 1.3vw;
+    }
+}
+    </style>
 </head>
 <body>
-
-    <!-- <div class="wrapper">
-        <div class="left-side grid"> -->
-            <!-- <div class="first-row">  -->
-                <!-- <div class="choose1 grid" style="background-image: url(Images/font.jfif);">
-                    <div class="overlay">
-                        <h1>Шрифты</h1>
-                    </div>
-                </div>
-                <div class="choose2 grid" style="background-image: url(Images/cods.jpeg);">
-                    <div class="overlay_nth-child2">
-                        <h1>Редактори <br> Коду</h1>
-                    </div>
-                </div>
-                <div class="choose3 grid" style="background-image: url(Images/learn.jpeg);">
-                    <div class="overlay">
-                        <h1>Обучение <br> front-end</h1>
-                    </div>
-                </div>
-                <div class="choose4 grid" style="background-image: url(Images/polza.jpg);">
-                    <div class="overlay">
-                        <h1>Полезные <br> блоги</h1>
-                    </div>
-                </div>
-                <div class="choose5 grid" style="background-image: url(Images/help.jpg);">
-                    <div class="overlay">
-                        <h1>Допомога <br> дизайнерам</h1>
-                    </div>
-                </div>
-        </div>
-        <div class="right-side grid">
-            <div class="heading">
-                <h1>Шпаргалка для front-end разработчиков</h1>
-                <p>Не стоит благодарить, просто пользуйтесь</p>
-            </div>
-        </div>
-    </div> -->
-
     <main class="main">
         <div class="categories">
                     <div class="categories__fonts" onclick="showFonts()">
