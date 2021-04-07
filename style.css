@@ -155,7 +155,7 @@ a:hover {
     }
     @media screen and (max-width: 423px) {
         .list__text {
-            font-size: 14px;
+            font-size: 12px;
         }
             .categories{ 
                 font-size: 1em;
