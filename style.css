@@ -208,9 +208,9 @@ a:hover {
 }
 @media screen and (min-width: 3000px) {
     .overlay {
-        height: 84.9rem;
+        height: 89.9rem;
     }
     .list {
-        height: 170rem;
+        height: 180rem;
     }
 }
