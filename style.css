@@ -77,7 +77,9 @@ main {
     height: 60rem;
     padding: 3px;
     font-size: 2vw;
-
+}
+.list p {
+    font-size: 2vw;
 }
 .overlay {
     height: 29.95rem;
@@ -95,29 +97,8 @@ a, a:link, a:visited {
 a:hover {
     color:skyblue;
 }
-@media screen and (max-width: 712px) {
-    .categories{
-        font-size: 1vh;
-    }
-    .main {
-        height: 35rem;
-    }
-    .list {
-        height: 35rem;
-        padding: 3px;
-    }
-    .overlay {
-        height: 17.4rem;
-    }
-    .list__text {
-        font-size: 4vw;
-    }
-    .categories h1 {
-        padding-top: 140px;
-        font-size: 3vw;
-    }
-}
-@media screen and (max-width: 442px) {
+
+/*@media screen and (max-width: 442px) {
     .list__text {
         font-size: 3vw;
     }
@@ -129,19 +110,74 @@ a:hover {
 }
 @media screen and (min-width: 487px) {
     .list__text {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
     }
 }
 @media screen and (min-width: 678px) {
     .list__text {
         font-size: 2vw;
     }
-}
-@media screen and (min-width: 712px) {
-    .list__text{
-        font-size: 2.5vh;
+} */
+
+
+@media screen and (min-width: 633px) {
+    .list__text {
+        font-size: 2.5vw;
     }
 }
+
+@media screen and (min-width: 1143px) {
+    .list__text {
+        font-size: 1.7vw;
+    }
+}
+    @media screen and (max-width: 633px) {
+        .categories {
+            font-size: 1vw;
+        }
+        .main {
+            height: 34rem;
+        }
+        .list {
+            height: 34rem;
+            padding: 3px;
+        }
+        .overlay {
+            height: 16.9rem;
+        }
+        .list__text {
+            font-size: 2.5vw;
+        }
+        .categories h1 {
+            padding-top: 140px;
+            font-size: 3vw;
+        }
+    }
+    @media screen and (max-width: 423px) {
+        .list__text {
+            font-size: 3.7vw;
+        }
+            .categories{ 
+                font-size: 1em;
+            }
+            .main {
+                height: 45rem;
+            }
+            .list {
+                height: 45rem;
+                padding: 3px;
+            }
+            .overlay {
+                height: 22.4rem;
+            }
+            .categories h1 {
+                padding-top: 140px;
+                font-size: 3.5vw;
+            }
+            .list p {
+                font-size: 3vw;
+            }
+        }
 @media screen and (min-width: 1550px) {
     .main {
         height: 75rem;
@@ -154,5 +190,19 @@ a:hover {
     }
     .list__text {
         font-size: 1.3vw;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .main {
+        height: 90rem;
+    }
+    .list {
+        height: 90rem;
+    }
+    .overlay {
+        height: 44.9rem;
+    }
+    .list__text {
+        font-size: 1.2vw;
     }
 }
