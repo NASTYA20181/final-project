@@ -28,5 +28,5 @@ let text = document.querySelector(".list__text");
         function showHelp() {
             text.innerHTML = '<a href="https://color.hailpixel.com/" target="_blank">' + `color.hailpixel.com - незвичайний підбір кольорової палітри` + '</a>' + '<br>' + '<br>' +
                              '<a href="https://www.freepik.com/" target="_blank">' + `www.freepik.com - безкоштовні картинки і іконки`+ '</a>' + '<br>' + '<br>' +
-                             '<a href="https://github.com/heyalexej/awesome-images" target="_blank">' +`github.com/heyalexej/awesome-images - величезний список ресурсів з безкоштовними фотографіями` + '</a>'
+                             '<a href="https://adamovna.ru/300saitov-for-designer/" target="_blank">' +`adamovna.ru - 300 корисних сайтів в допомогу дизайнерові` + '</a>'
         }
