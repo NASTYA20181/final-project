@@ -100,7 +100,6 @@ a:hover {
 /* FOOOOOOOOOOOOOOTER */
 
 footer {
-    height: 10rem;
     background-color: #121623;
     display: flex;
     flex-wrap: wrap;
@@ -128,12 +127,14 @@ footer {
 }
 
 .logo {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
-
+.logo img {
+    width: 100%;
+}
 .line hr {
-    margin-top: 4.8rem;
-    width: 104px;
+    margin-top: 5rem;
+    width: 80px;
     height: 0px;
     border: 2px solid #FFFFFF;
     transform: rotate(90deg);
@@ -149,19 +150,19 @@ footer {
 
 .rectangle {
     margin-top: 1.8rem;
-    width: 60vh;
-    height: 12vh;
+    width: 40vw;
+    height: 10vw;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     text-align: left;
     display: flex;
     padding: 0.2rem;
+    cursor: pointer;
+}
+.rectangle:hover {
+    background-color: darkcyan;
 }
 
-.rectangle svg {
-    margin-top: 0.6rem;
-    margin-left: 2rem;
-}
 
 .rectangle p {
     /* vertical-align: middle; */
@@ -170,38 +171,29 @@ footer {
     margin-left: 3rem;
 }
 
-
-/*@media screen and (max-width: 442px) {
-    .list__text {
-        font-size: 3vw;
-    }
-}
-@media screen and (min-width: 442px) {
-    .list__text {
-        font-size: 2.5vw;
-    }
-}
-@media screen and (min-width: 487px) {
-    .list__text {
-        font-size: 2.4vw;
-    }
-}
-@media screen and (min-width: 678px) {
-    .list__text {
-        font-size: 2vw;
-    }
-} */
-
-
 @media screen and (min-width: 633px) {
     .list__text {
         font-size: 2.5vw;
+    }
+    .logo img {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .line hr {
+        width: 80px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
     }
 }
 
 @media screen and (min-width: 1143px) {
     .list__text {
         font-size: 1.7vw;
+    }
+    .right-side p, .copyright {
+        font-size: 2vw;
+        margin-left: 1rem;
     }
 }
     @media screen and (max-width: 633px) {
@@ -224,6 +216,12 @@ footer {
         .categories h1 {
             padding-top: 140px;
             font-size: 3vw;
+        }
+        .logo img {
+            margin-left: 1rem;
+        }
+        footer {
+            height: 40vw;
         }
     }
     @media screen and (max-width: 423px) {
@@ -250,6 +248,20 @@ footer {
             .list p {
                 font-size: 3vw;
             }
+            footer {
+                height: 36vw;
+            }
+            .copyright p {
+                text-align: left;
+                margin-top: 1.5rem;
+            }
+            .line hr {
+                margin-top: 3.8rem;
+                width: 68px;
+                height: 0px;
+                /* border: 2px solid #FFFFFF; */
+                transform: rotate(90deg);
+            }
         }
 @media screen and (min-width: 1550px) {
     .main {
@@ -269,35 +281,22 @@ footer {
 @media screen and (max-width: 2150px) {
     .copyright {
         margin-top: 0.8rem;
-        font-size: 2.5vh;
-    }
-
-    .right-side p {
-        font-size: 3vh;
+        font-size: 2.5vw;
     }
 }
 
 @media screen and (max-width: 1881px) {
-    .right-side p {
-        font-size: 3vh;
-    }
-
     .copyright {
         margin-top: 0.8rem;
-        font-size: 2.5vh;
+        font-size: 2.5vw;
     }
 }
 
 @media screen and (max-width: 1797px) {
     .copyright {
         margin-top: 0.8rem;
-        font-size: 2.5vh;
+        font-size: 2.5vw;
     }
-
-    .right-side p {
-        font-size: 3vh;
-    }
-
     .rectangle svg {
         margin-top: 0.1rem;
         margin-left: 1.6rem;
@@ -305,16 +304,12 @@ footer {
 }
 
 @media screen and (max-width: 1143px) {
-    .list__text {
-        font-size: 1.7vw;
-    }
-
     .rectangle {
         width: 80%;
     }
 
     .right-side p, .copyright {
-        font-size: 2vh;
+        font-size: 2vw;
         margin-left: 1rem;
     }
 }
@@ -322,53 +317,45 @@ footer {
 @media screen and (max-width: 648px) {
     .copyright {
         margin-top: 0.5rem;
-        font-size: 1.4vh;
+        font-size: 3vw;
     }
 
     .right-side p {
-        font-size: 1.2vh;
+        font-size: 2.5vw;
         line-height: 15px;
     }
 
     .rectangle {
-        width: 19vh;
-        border: none;
+        width: 40vw;
+        height: 26vw;
+        border: 2px solid #FFFFFF;
         box-sizing: unset;
+        margin-top: 1.3rem;
     }
 
     .line hr {
-        margin-top: 4.8rem;
-        width: 44px;
+        width: 68px;
         height: 0px;
-        border: 2px solid #FFFFFF;
+        /* border: 2px solid #FFFFFF; */
         transform: rotate(90deg);
     }
 }
 
-@media screen and (max-width: 370px) {
+/* @media screen and (max-width: 370px) {
         .copyright {
             margin-top: 0.5rem;
-            font-size: 1.2vh;
+            font-size: 2vw;
         }
-    
-        .right-side p {
-            font-size: 1.4vh;
-            line-height: 15px;
-        }
-    
+        .copyright p {
+            font-size: 3vw;
+            margin-top: 1.5rem;
+
+        }    
         .rectangle {
-            width: 19vh;
-            border: none;
             box-sizing: unset;
-        }
-    
-        .line hr {
-            margin-top: 4.8rem;
-            height: 0px;
             border: 2px solid #FFFFFF;
-            transform: rotate(90deg);
         }
-    }
+    } */
 @media screen and (min-width: 1800px) {
     .main {
         height: 90rem;
@@ -382,6 +369,58 @@ footer {
     .list__text {
         font-size: 1.2vw;
     }
+    footer {
+        background-color: #121623;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #eef0f1;
+        height: 12vw;
+        text-align: center;
+    }
+    .rectangle p {
+        line-height: normal;
+    }
+    .line hr {
+        width: 180px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
+        margin-top: 7rem;
+    }
+    .logo img {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 140%;
+    }
+    .rectangle {
+        margin-top: 1.8rem;
+        width: 40vw;
+        height: 8vw;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        text-align: left;
+        display: flex;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .logo img {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        width: 140%;
+    }
+    .line hr {
+        width: 180px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
+        margin-top: 8rem;
+    }
 }
 @media screen and (min-width: 3000px) {
     .overlay {
@@ -389,5 +428,8 @@ footer {
     }
     .list {
         height: 180rem;
+    }
+    footer {
+        height: 80rem;
     }
 }
