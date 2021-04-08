@@ -19,7 +19,6 @@ main {
     width: 65%; 
     flex-wrap: wrap; 
     font-size: 1.5vw;
-
 }
 .categories h1 {
     padding-top: 160px;
@@ -98,37 +97,103 @@ a:hover {
     color:skyblue;
 }
 
-/*@media screen and (max-width: 442px) {
-    .list__text {
-        font-size: 3vw;
-    }
-}
-@media screen and (min-width: 442px) {
-    .list__text {
-        font-size: 2.5vw;
-    }
-}
-@media screen and (min-width: 487px) {
-    .list__text {
-        font-size: 2.4vw;
-    }
-}
-@media screen and (min-width: 678px) {
-    .list__text {
-        font-size: 2vw;
-    }
-} */
+/* FOOOOOOOOOOOOOOTER */
 
+footer {
+    background-color: #121623;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #eef0f1;
+    text-align: center;
+}
+
+.left-side {
+    display: flex; 
+    width: 50%; 
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: 300; */
+    font-size: 1.3vw;
+    justify-content: center;
+}
+
+.copyright p {
+    text-align: left;
+    margin-top: 2.5rem;
+}
+
+.logo {
+    margin-top: 2.5rem;
+}
+.logo img {
+    width: 100%;
+}
+.line hr {
+    margin-top: 5rem;
+    width: 80px;
+    height: 0px;
+    border: 2px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.right-side {
+    display: flex; 
+    width: 50%; 
+    flex-wrap: wrap; 
+    font-size: 1.2vw;
+    justify-content: center;
+}
+
+.rectangle {
+    margin-top: 1.8rem;
+    width: 40vw;
+    height: 10vw;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.rectangle:hover {
+    background-color: darkcyan;
+}
+
+
+.rectangle p {
+    /* vertical-align: middle; */
+    line-height: 1.3rem;
+    width: 60%;
+    margin-left: 3rem;
+}
 
 @media screen and (min-width: 633px) {
     .list__text {
         font-size: 2.5vw;
+    }
+    .logo img {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .line hr {
+        width: 80px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
     }
 }
 
 @media screen and (min-width: 1143px) {
     .list__text {
         font-size: 1.7vw;
+    }
+    .right-side p, .copyright {
+        font-size: 2vw;
+        margin-left: 1rem;
     }
 }
     @media screen and (max-width: 633px) {
@@ -151,6 +216,12 @@ a:hover {
         .categories h1 {
             padding-top: 140px;
             font-size: 3vw;
+        }
+        .logo img {
+            margin-left: 1rem;
+        }
+        footer {
+            height: 40vw;
         }
     }
     @media screen and (max-width: 423px) {
@@ -177,6 +248,20 @@ a:hover {
             .list p {
                 font-size: 3vw;
             }
+            footer {
+                height: 36vw;
+            }
+            .copyright p {
+                text-align: left;
+                margin-top: 1.5rem;
+            }
+            .line hr {
+                margin-top: 3.8rem;
+                width: 68px;
+                height: 0px;
+                /* border: 2px solid #FFFFFF; */
+                transform: rotate(90deg);
+            }
         }
 @media screen and (min-width: 1550px) {
     .main {
@@ -192,6 +277,85 @@ a:hover {
         font-size: 1.3vw;
     }
 }
+
+@media screen and (max-width: 2150px) {
+    .copyright {
+        margin-top: 0.8rem;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1881px) {
+    .copyright {
+        margin-top: 0.8rem;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1797px) {
+    .copyright {
+        margin-top: 0.8rem;
+        font-size: 2.5vw;
+    }
+    .rectangle svg {
+        margin-top: 0.1rem;
+        margin-left: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1143px) {
+    .rectangle {
+        width: 80%;
+    }
+
+    .right-side p, .copyright {
+        font-size: 2vw;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .copyright {
+        margin-top: 0.5rem;
+        font-size: 3vw;
+    }
+
+    .right-side p {
+        font-size: 2.5vw;
+        line-height: 15px;
+    }
+
+    .rectangle {
+        width: 40vw;
+        height: 26vw;
+        border: 2px solid #FFFFFF;
+        box-sizing: unset;
+        margin-top: 1.3rem;
+    }
+
+    .line hr {
+        width: 68px;
+        height: 0px;
+        /* border: 2px solid #FFFFFF; */
+        transform: rotate(90deg);
+    }
+}
+
+/* @media screen and (max-width: 370px) {
+        .copyright {
+            margin-top: 0.5rem;
+            font-size: 2vw;
+        }
+        .copyright p {
+            font-size: 3vw;
+            margin-top: 1.5rem;
+
+        }    
+        .rectangle {
+            box-sizing: unset;
+            border: 2px solid #FFFFFF;
+        }
+    } */
 @media screen and (min-width: 1800px) {
     .main {
         height: 90rem;
@@ -205,6 +369,58 @@ a:hover {
     .list__text {
         font-size: 1.2vw;
     }
+    footer {
+        background-color: #121623;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #eef0f1;
+        height: 12vw;
+        text-align: center;
+    }
+    .rectangle p {
+        line-height: normal;
+    }
+    .line hr {
+        width: 180px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
+        margin-top: 7rem;
+    }
+    .logo img {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 140%;
+    }
+    .rectangle {
+        margin-top: 1.8rem;
+        width: 40vw;
+        height: 8vw;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        text-align: left;
+        display: flex;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .logo img {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        width: 140%;
+    }
+    .line hr {
+        width: 180px;
+        height: 0px;
+        border: 2px solid #FFFFFF;
+        transform: rotate(90deg);
+        margin-top: 8rem;
+    }
 }
 @media screen and (min-width: 3000px) {
     .overlay {
@@ -212,5 +428,8 @@ a:hover {
     }
     .list {
         height: 180rem;
+    }
+    footer {
+        height: 80rem;
     }
 }
